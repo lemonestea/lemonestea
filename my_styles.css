@@ -1,0 +1,26 @@
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+
+@keyframes typing{
+    from{ width: 0; }
+}
+
+#my-name{
+    margin-left:14ch;
+    letter-spacing: 10px;
+    width: 22.5rem;
+    white-space: nowrap;
+    overflow:hidden;
+    font-family: monospace;
+    animation: typing 1s steps(12), cursor .8s step-end infinite alternate;
+}
+
+@media (max-width: 640px) {
+    #my-name{
+        margin-left: 1ch;
+        letter-spacing: 5px;
+        width: 19rem;
+    }
+    
+}

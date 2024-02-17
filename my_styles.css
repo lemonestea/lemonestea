@@ -2,38 +2,14 @@
     50% { border-color: transparent;}
 }
 
-@keyframes typing{
-    from{ width: 0; }
+#div-name{
+    display: flex;
+    justify-content: center;
 }
-@media (min-width: 800px){
-    #div-name{
-        display:inline-block;
-    }
-    
-    #my-name{
-        margin-left:14ch;
-        letter-spacing: 10px;
-        width: 22.5rem;
-        white-space: nowrap;
-        overflow:hidden;
-        font-family: monospace;
-        animation: typing 1s steps(12), cursor .8s step-end infinite alternate;
-    }
-}
-
-
-@media (max-width: 800px) {
-
-    #div-name{
-        display: flex;
-        justify-content: center;
-    }
-    #my-name{
-        text-align: center;
-        letter-spacing: 5px;
-        font-family: monospace;
-        animation: cursor .8s step-end infinite alternate;
-        white-space: nowrap;
-    }
-    
+#my-name{
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: monospace;
+    animation: cursor .8s step-end infinite alternate;
+    white-space: nowrap;
 }
